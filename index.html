@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Delightics | 소프트웨어 개발 스튜디오</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="딜라이틱스(Delightics)는 기술을 통해 더 나은 경험을 설계하는 소프트웨어 개발 스튜디오입니다. 아이디어를 빠르게 구현하고 오래 사용할 수 있는 제품을 만듭니다.">
+    <meta name="keywords" content="딜라이틱스, Delightics, 소프트웨어 개발, 웹 개발, 앱 개발, 개발 스튜디오, 스타트업 개발, 맞춤형 소프트웨어">
+    <meta name="author" content="Delightics">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Delightics | 딜라이틱스 소프트웨어 개발 스튜디오">
+    <meta property="og:description" content="기술을 통해 더 나은 경험을 설계합니다.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Delightics | 딜라이틱스 소프트웨어 개발 스튜디오</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030712; color: #f8fafc; }
@@ -24,23 +37,29 @@
         Delight<span class="text-blue-500">ics</span>
     </div>
 
-    <!-- Desktop Menu -->
     <div class="hidden md:flex space-x-10 text-xs font-semibold tracking-widest uppercase text-gray-400">
-        <a href="#about" class="hover:text-white transition">About</a>
-        <!-- ★ Works 메뉴 주석 처리 -->
-        <!-- <a href="#works" class="hover:text-white transition">Works</a> -->
-        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-    </div>
+		<a href="#about" class="hover:text-white transition">About</a>		
+		<a href="#services" class="hover:text-white transition">Services</a>
+<!-- 		
+		<a href="#process" class="hover:text-white transition">Process</a>
+		<a href="#fit" class="hover:text-white transition">Fit</a>
+		<a href="#faq" class="hover:text-white transition">FAQ</a>
+-->		
+		<a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+	</div>
 
-    <!-- Mobile Button -->
-    <button id="menuBtn" class="md:hidden text-white">
-        ☰
-    </button>
+    <button id="menuBtn" class="md:hidden text-white">☰</button>
 </nav>
 
 <!-- Mobile Menu -->
 <div id="mobileMenu" class="hidden fixed top-20 inset-x-0 mx-6 glass-card rounded-2xl p-6 text-center space-y-6 text-sm font-semibold tracking-widest uppercase z-40">
-    <a href="#about" class="block" onclick="toggleMenu()">About</a>
+    <a href="#about" class="block" onclick="toggleMenu()">About</a>	
+    <a href="#services" class="block" onclick="toggleMenu()">Services</a>
+<!-- 	
+    <a href="#process" class="block" onclick="toggleMenu()">Process</a>
+    <a href="#fit" class="block" onclick="toggleMenu()">Fit</a>
+    <a href="#faq" class="block" onclick="toggleMenu()">FAQ</a>
+-->	
     <a href="#contact" class="block text-blue-400" onclick="toggleMenu()">Contact</a>
 </div>
 
@@ -51,58 +70,256 @@
     </div>
 
     <h1 class="text-6xl md:text-9xl font-extrabold mb-8 tracking-tighter">
-        Smart Tech,<br><span class="delight-gradient">Delightful Experience.</span>
+        Smart Tech,<br>
+        <span class="delight-gradient">Delightful Experience.</span>
     </h1>
 
     <p class="text-gray-400 max-w-2xl text-lg md:text-xl leading-relaxed mb-12">
         소프트웨어 개발 스튜디오 딜라이틱스는<br>
-        아이디어를 빠르게 구현하고 오래 사용할 수 있는 제품을 만듭니다.
+        기술을 통해 더 나은 경험을 설계합니다.
     </p>
 
-    <div class="flex flex-col md:flex-row gap-4">
-        <!-- ★ Works 연결 버튼 주석 처리 -->
-        <!-- <a href="#works" class="px-10 py-4 bg-white text-black font-bold rounded-xl">View Projects</a> -->
-        <a href="#contact" class="px-10 py-4 glass-card font-bold rounded-xl">Let's Talk</a>
-    </div>
+    <a href="#contact" class="px-10 py-4 glass-card font-bold rounded-xl">
+        Let's Talk
+    </a>
 </section>
 
 <!-- About Section -->
 <section id="about" class="py-32 px-6 max-w-4xl mx-auto text-center">
-    <!-- ★ 기존 Stats Section 전체 주석 처리 -->
-    <!--
-    <section class="py-20 border-y border-white/5 bg-white/[0.01]">
-        ...
-    </section>
-    -->
-
-    <!-- ★ 소개 문구 추가 -->
     <h2 class="text-4xl md:text-5xl font-black mb-8">
-        One Developer,<br>Focused Craftsmanship
+        Designed for Experience
     </h2>
     <p class="text-gray-400 text-lg leading-relaxed">
-        딜라이틱스는 기획부터 설계, 개발까지 전 과정을 직접 책임집니다.<br>
-        불필요한 복잡함을 덜어내고, 비즈니스에 꼭 필요한 기능만을 구현합니다.<br><br>
-        작지만 유연한 구조, 빠른 소통, 그리고 높은 완성도를 지향합니다.
+        딜라이틱스는 기술을 통해 경험을 설계하는<br>
+        소프트웨어 개발 스튜디오입니다.<br><br>
+
+        아이디어를 빠르게 구현하되,<br>
+        시간이 지나도 가치를 잃지 않는 구조를 고민합니다.<br><br>
+
+        명확한 문제 정의, 단순한 설계,<br>
+        그리고 높은 완성도를 추구합니다.
     </p>
 </section>
 
-<!-- ★ Works Section 전체 주석 처리 -->
+<!-- What We Do Section -->
+<section id="services" class="py-32 px-6 max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-black mb-6">
+        What We Do
+    </h2>
+    <p class="text-gray-400 text-lg mb-20">
+        비즈니스에 실질적인 가치를 만드는<br>
+        소프트웨어를 설계하고 구현합니다.
+    </p>
+
+    <!--<div class="grid gap-10 md:grid-cols-3">-->
+	<div class="grid gap-10 md:grid-cols-2">
+        <div class="glass-card rounded-2xl p-8 text-left">
+            <h3 class="text-xl font-bold mb-4">
+                Digital Product Development
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                아이디어를 실제 제품으로 <!--만듭니다.--><br>
+                <!--웹과 앱을 포함한 디지털 제품을<br>-->
+                기획부터 개발까지 일관되게 구현합니다.
+            </p>
+        </div>
 <!--
-<section id="works" class="py-32 px-6 max-w-7xl mx-auto">
-    ...
+        <div class="glass-card rounded-2xl p-8 text-left">
+            <h3 class="text-xl font-bold mb-4">
+                MVP & Early Stage Build
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                빠르게 검증해야 하는 초기 단계에 집중합니다.<br>
+                핵심 기능만으로 시작해,<br>
+                다음 단계를 고려한 구조를 만듭니다.
+            </p>
+        </div>
+-->
+        <div class="glass-card rounded-2xl p-8 text-left">
+            <h3 class="text-xl font-bold mb-4">
+                System & Experience Design
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                기능만이 아니라 흐름을 설계하며<!--합니다.--><br>
+                <!--사용자 경험과 유지보수를 고려한<br>-->
+                단순하고 명확한 구조를 지향합니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- How We Work Section -->
+<!-- 
+<section id="process" class="py-32 px-6 max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-black mb-6">
+        How We Work
+    </h2>
+    <p class="text-gray-400 text-lg mb-20">
+        복잡한 절차보다,<br>
+        명확한 이해와 집중을 중요하게 생각합니다.
+    </p>
+
+    <div class="grid gap-10 md:grid-cols-3">
+        <div class="glass-card rounded-2xl p-8 text-left">
+            <span class="text-blue-400 text-sm font-bold tracking-widest">
+                STEP 01
+            </span>
+            <h3 class="text-xl font-bold mt-4 mb-4">
+                Understand the Problem
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                기능보다 문제를 먼저 이해합니다.<br>
+                왜 필요한지, 무엇을 해결해야 하는지부터<br>
+                함께 정리합니다.
+            </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8 text-left">
+            <span class="text-blue-400 text-sm font-bold tracking-widest">
+                STEP 02
+            </span>
+            <h3 class="text-xl font-bold mt-4 mb-4">
+                Design the Right Solution
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                불필요한 것을 덜어내고,<br>
+                지금 단계에 가장 적합한 구조를 설계합니다.<br>
+                확장성과 유지보수를 함께 고려합니다.
+            </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8 text-left">
+            <span class="text-blue-400 text-sm font-bold tracking-widest">
+                STEP 03
+            </span>
+            <h3 class="text-xl font-bold mt-4 mb-4">
+                Build & Refine
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                빠르게 구현하고, 세밀하게 다듬습니다.<br>
+                사용성과 완성도를 기준으로<br>
+                반복하며 개선합니다.
+            </p>
+        </div>
+    </div>
 </section>
 -->
+<!-- Good Fit Section -->
+<!-- 
+<section id="fit" class="py-32 px-6 max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-black mb-6">
+        Good Fit / Not a Good Fit
+    </h2>
+    <p class="text-gray-400 text-lg mb-20">
+        서로에게 좋은 결과를 만들기 위해,<br>
+        이런 프로젝트와 잘 맞습니다.
+    </p>
 
+    <div class="grid gap-12 md:grid-cols-2 text-left">
+        <div class="glass-card rounded-2xl p-8">
+            <h3 class="text-2xl font-bold mb-6 text-blue-400">
+                Good Fit
+            </h3>
+            <ul class="space-y-4 text-gray-400">
+                <li>문제 정의가 아직 완벽하지 않아도 괜찮은 경우</li>
+                <li>함께 논의하며 방향을 정리하고 싶은 팀</li>
+                <li>빠른 구현보다, 올바른 구조를 중요하게 생각하는 경우</li>
+                <li>장기적으로 제품을 성장시키고 싶은 경우</li>
+            </ul>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8">
+            <h3 class="text-2xl font-bold mb-6 text-gray-500">
+                Not a Good Fit
+            </h3>
+            <ul class="space-y-4 text-gray-500">
+                <li>이미 모든 요구사항이 고정되어 있는 경우</li>
+                <li>단기간 결과만을 목표로 하는 작업</li>
+                <li>구조나 품질보다 기능 수량을 우선하는 경우</li>
+                <li>명확한 커뮤니케이션이 어려운 경우</li>
+            </ul>
+        </div>
+    </div>
+</section>
+-->
+<!-- FAQ Section -->
+<!-- 
+<section id="faq" class="py-32 px-6 max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-black mb-20 text-center">
+        FAQ
+    </h2>
+
+    <div class="space-y-12">
+        <div class="glass-card rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-4">
+                프로젝트 비용은 어떻게 책정되나요?
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                프로젝트의 범위와 복잡도에 따라 다르게 책정됩니다.<br><br>
+                기능 수보다 해결해야 할 문제의 난이도와,<br>
+                설계 및 구조에 필요한 고민의 깊이를 기준으로 합니다.<br><br>
+                초기 논의 단계에서 예산과 목표를 함께 공유해 주시면,<br>
+                현실적인 범위 안에서 가장 적합한 방향을 제안드립니다.
+            </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-4">
+                개발 기간은 어느 정도 걸리나요?
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                프로젝트의 성격과 범위에 따라 달라집니다.<br><br>
+                일반적으로 초기 MVP는 수 주 단위,<br>
+                운영을 고려한 제품은 더 긴 호흡으로 진행됩니다.<br><br>
+                빠른 구현이 필요한 경우에도,<br>
+                완성도와 유지보수를 고려한 일정으로 조율합니다.
+            </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-4">
+                협업은 어떤 방식으로 진행되나요?
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+                정해진 절차보다, 상황에 맞는 협업을 중요하게 생각합니다.<br><br>
+                초기에는 문제 정의와 방향 정리에 집중하고,<br>
+                이후 설계와 개발을 단계적으로 진행합니다.<br><br>
+                진행 상황은 명확하게 공유하며,<br>
+                필요한 논의는 언제든 열려 있습니다.
+            </p>
+        </div>
+    </div>
+</section>
+-->
 <!-- Contact Section -->
 <section id="contact" class="py-32 px-6">
     <div class="max-w-4xl mx-auto glass-card rounded-[40px] p-12 md:p-20 text-center relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
-        <h2 class="text-4xl md:text-6xl font-black mb-8">
+
+        <h2 class="text-4xl md:text-6xl font-black mb-6">
             Let's Create<br>Something Delightful
         </h2>
-        <p class="text-gray-400 mb-12 text-lg">
-            프로젝트 제안이나 협업 문의는 언제든 환영합니다.
+ 
+        <p class="text-gray-400 mb-6 text-lg">
+			<br>
+<!--		
+            아직 아이디어 단계여도 괜찮습니다.<br>
+            함께 정리하는 것부터 시작할 수 있습니다.
+-->			
         </p>
+		
+<!-- 
+        <p class="text-gray-500 mb-8 text-base leading-relaxed">
+            아래 내용을 간단히 적어주시면,<br>
+            더 빠르고 정확한 답변을 드릴 수 있습니다.
+        </p>
+
+        <p class="text-gray-500 mb-12 text-sm leading-relaxed">
+            • 만들고 싶은 제품이나 해결하고 싶은 문제<br>
+            • 현재 단계 (아이디어 / MVP / 운영 중 등)<br>
+            • 원하는 일정이나 목표
+        </p>
+-->
         <a href="mailto:contact@delightics.com" class="text-xl md:text-3xl text-blue-400 font-bold">
             contact@delightics.com
         </a>
